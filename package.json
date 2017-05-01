@@ -1,0 +1,31 @@
+{
+  "name": "vsts-get-additional-sources",
+  "version": "1.0.0",
+  "description": "VSTS task to retrieve additional sources from version control.",
+  "main": "get-additional-sources.js",
+  "dependencies": {
+    "vso-node-api": "^6.2.2-preview",
+    "vsts-task-lib": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node get-additional-sources.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timlajaunie/vsts-get-additional-sources.git"
+  },
+  "keywords": [
+    "VSTS",
+    "Task",
+    "TFVC"
+  ],
+  "author": "timlajaunie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timlajaunie/vsts-get-additional-sources/issues"
+  },
+  "homepage": "https://github.com/timlajaunie/vsts-get-additional-sources#readme"
+}

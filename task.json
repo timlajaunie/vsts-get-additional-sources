@@ -1,0 +1,47 @@
+{
+    "id": "c726f9bd-f790-456e-b849-1da86a69b52f",
+    "name": "GetAdditionalSources",
+    "friendlyName": "Get Additional Sources",
+    "description": "Downloads additional sources from source control.",
+    "category": "Build",
+    "visibility": [
+        "Build"
+    ],
+    "author": "Corporate Services, LLC",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "minimumAgentVersion": "1.83.0",
+    "inputs": [
+        {
+            "name": "source",
+            "type": "string",
+            "label": "Source",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Source path."
+        },
+        {
+            "name": "destination",
+            "type": "string",
+            "label": "Destination",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Destination path, relative to the build sources directory."
+        }
+    ],
+    "instanceNameFormat": "Get Additional Sources $(source)",
+    "execution": {
+        "Node": {
+            "target": "get-additional-sources.js",
+            "argumentFormat": ""
+        },
+        "PowerShell": {
+            "target": "GetAdditionalSources.ps1",
+            "argumentFormat": "",
+            "workingDirectory": ""
+        }
+    }
+}
