@@ -1,5 +1,4 @@
 import * as Q from 'q'
-import * as cm from './common'
 import * as vm from 'vso-node-api'
 import * as vc from 'vso-node-api/TfvcApi'
 import * as vci from "vso-node-api/interfaces/TfvcInterfaces"
