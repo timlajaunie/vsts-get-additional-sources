@@ -1,8 +1,8 @@
 {
-    "id": "c726f9bd-f790-456e-b849-1da86a69b52f",
+    "id": "4c9312ab-1f17-4c02-868f-00982b93981d",
     "name": "GetAdditionalSources",
-    "friendlyName": "Get Additional Sources",
-    "description": "Downloads additional sources from source control.",
+    "friendlyName": "Get Additional Sources (Preview)",
+    "description": "Downloads additional sources from version control.",
     "category": "Build",
     "visibility": [
         "Build"
@@ -11,7 +11,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 21
     },
     "minimumAgentVersion": "1.83.0",
     "inputs": [
