@@ -77,7 +77,9 @@ async function run() {
             else {
                 console.log('Downloading File: ' + item.path + ' -> ' + itemLocalPath);
                 let fileContent = await tfvc.getItemContent(item.path, undefined, undefined, undefined, undefined, undefined, versionDescriptor)
-                fs.writeFileSync(itemLocalPath, fileContent.read())
+                let file = fs.createWriteStream(itemLocalPath)
+                fileContent.pipe(file);
+                file.on('finish', () => file.close());
             }
         }
     }
